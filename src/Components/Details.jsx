@@ -75,9 +75,9 @@ function Details()
     },[])
     return(
         <div className="mediaDetails">
-            <div onClick={()=>{navigate('/')}} class="back material-icons-outlined">arrow_back</div>
-             {console.log(params)}
-             {console.log(mediaSource)}
+            <div onClick={()=>{navigate('/stockhome')}} class="back material-icons-outlined">arrow_back</div>
+             {/* {console.log(params)}
+             {console.log(mediaSource)} */}
             {/* <button onClick={() => navigate('/')}>Go Back</button>  */}
             <div id="mediaInfo">
             {
