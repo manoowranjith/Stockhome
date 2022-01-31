@@ -1,9 +1,10 @@
 import React from "react";
-// import axios from "axios";
+import { useNavigate } from 'react-router-dom';
 
 function Media(props)
 {
     const [renderMedia, setRenderMedia]=React.useState("photos")
+    const navigate = useNavigate();
 
     React.useEffect(()=>{
         // console.log(props.mediaType)
@@ -33,6 +34,12 @@ function Media(props)
         document.getElementById(activatebutton).style.backgroundColor="transparent"
         document.getElementById(activatebutton).style.border="1px solid black"
     }
+
+    function routing(type,id)
+    {
+       
+        navigate('/'+type+'/'+id.toString());
+    }
     return(
         <div id="media">
             <div className="media-type">
@@ -57,8 +64,8 @@ function Media(props)
                                        {element.photos.map(source=>{
                                        return(
                                            <div>   
-                                               {/* {console.log(source.src)} */}
-                                               <img className="media-content" src={source.src.portrait} alt="" srcSet="" />
+                                               {/* {console.log(source)} */}
+                                               <img onClick={()=>{routing("photos",source.id)}} className="media-content" src={source.src.portrait} alt="" srcSet="" />
                                            </div>
                                            )
                                        })}
@@ -84,8 +91,8 @@ function Media(props)
                                             {element.videos.map(source=>{
                                             return(
                                                 <div>   
-                                                   { console.log(source)}
-                                                    <img className="media-content" src={source.image} alt="" srcSet="" />
+                                                   {/* { console.log(source)} */}
+                                                    <img  onClick={()=>{routing("videos",source.id)}} className="media-content" src={source.image} alt="" srcSet="" />
                                                 </div>
                                                 )
                                             })}

@@ -1,14 +1,21 @@
 import './App.css';
 import React from 'react';
-import Header from './Components/Header';
-import Media from './Components/Media';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import Navbar from './Components/Navbar';
+import Home from './Components/Home';
+import Details from './Components/Details';
+
 function App() {
-  const [receivedData, setReceivedData]=React.useState([])
-  const [mediaType, setMediaType]=React.useState("photos")
   return (
     <div className="App">
-      <Header receivedData={receivedData} setReceivedData={setReceivedData}  mediaType={mediaType} setMediaType={setMediaType}/>
-      <Media  receivedData={receivedData} setReceivedData={setReceivedData} mediaType={mediaType} setMediaType={setMediaType}/>
+      <Navbar/>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home/>}></Route>
+          <Route path="/:type/:id" element={<Details/>}></Route>
+        </Routes>
+      </Router>
     </div>
   );
 }
