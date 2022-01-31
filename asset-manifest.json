@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/stockhome/static/css/main.926679ce.css",
+    "main.js": "/stockhome/static/js/main.fa696289.js",
+    "static/js/787.56b3def4.chunk.js": "/stockhome/static/js/787.56b3def4.chunk.js",
+    "index.html": "/stockhome/index.html",
+    "main.926679ce.css.map": "/stockhome/static/css/main.926679ce.css.map",
+    "main.fa696289.js.map": "/stockhome/static/js/main.fa696289.js.map",
+    "787.56b3def4.chunk.js.map": "/stockhome/static/js/787.56b3def4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.926679ce.css",
+    "static/js/main.fa696289.js"
+  ]
+}
