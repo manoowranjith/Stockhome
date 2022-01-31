@@ -52,9 +52,9 @@ function Search(props)
                         url: 'https://pexelsdimasv1.p.rapidapi.com/v1/curated',
                         params: {locale: 'en-US', per_page: '15', page: '1'},
                         headers: {
-                        authorization: '563492ad6f917000010000017bb61b16a9e64a148b88533b32408da4',
+                        authorization: 'pexels API KEY',
                         'x-rapidapi-host': 'PexelsdimasV1.p.rapidapi.com',
-                        'x-rapidapi-key': 'e80d0cd914msh732a35d720eb0a2p1d5b34jsnc852525bc685'
+                        'x-rapidapi-key': 'Rapid API KEY'
                         }
                     }
                 }
@@ -67,9 +67,9 @@ function Search(props)
                         url: 'https://pexelsdimasv1.p.rapidapi.com/videos/popular',
                         params: {per_page: '15', page: '1'},
                         headers: {
-                          authorization: '563492ad6f9170000100000165105a8ad0aa403c9685ca53c38c886d',
+                          authorization: 'PEXELS AP KEY',
                           'x-rapidapi-host': 'PexelsdimasV1.p.rapidapi.com',
-                          'x-rapidapi-key': '4cc77eccd7msh34b0a31fd027ad3p1a8060jsnc9a8128cf367'
+                          'x-rapidapi-key': 'Rapid API KEY'
                         }
                       };
                 }
@@ -84,7 +84,7 @@ function Search(props)
                         url: 'https://pexelsdimasv1.p.rapidapi.com/v1/search',
                         params: {query: queryData, locale: 'en-US', per_page: '15', page: '1'},
                         headers: {
-                          authorization: '563492ad6f917000010000017bb61b16a9e64a148b88533b32408da4',
+                          authorization: 'pexels API KEY',
                           'x-rapidapi-host': 'PexelsdimasV1.p.rapidapi.com',
                           'x-rapidapi-key': '4cc77eccd7msh34b0a31fd027ad3p1a8060jsnc9a8128cf367'
                         }
@@ -98,9 +98,9 @@ function Search(props)
                         url: 'https://pexelsdimasv1.p.rapidapi.com/videos/search',
                         params: {query: queryData, per_page: '15', page: '1'},
                         headers: {
-                          authorization: '563492ad6f9170000100000165105a8ad0aa403c9685ca53c38c886d',
+                          authorization: 'PEXELS API KEY',
                           'x-rapidapi-host': 'PexelsdimasV1.p.rapidapi.com',
-                          'x-rapidapi-key': '4cc77eccd7msh34b0a31fd027ad3p1a8060jsnc9a8128cf367'
+                          'x-rapidapi-key': 'RAPID API KEY'
                         }
                       };
                 }

@@ -18,10 +18,9 @@ function Details()
                 method: 'GET',
                 url: 'https://pexelsdimasv1.p.rapidapi.com/v1/'+params.type+'/'+params.id,
                 headers: {
-                    // 563492ad6f917000010000017bb61b16a9e64a148b88533b32408da4
-                    authorization: '563492ad6f917000010000017bb61b16a9e64a148b88533b32408da4',
+                    authorization: 'pexels API KEY',
                     'x-rapidapi-host': 'PexelsdimasV1.p.rapidapi.com',
-                    'x-rapidapi-key': 'e80d0cd914msh732a35d720eb0a2p1d5b34jsnc852525bc685'
+                    'x-rapidapi-key': 'rapid API KEY'
                 }
             };
         }
@@ -31,10 +30,9 @@ function Details()
                 method: 'GET',  
                 url: 'https://pexelsdimasv1.p.rapidapi.com/'+params.type+'/'+params.type+'/'+params.id,
                 headers: {
-                    // 563492ad6f917000010000017bb61b16a9e64a148b88533b32408da4
-                    authorization: '563492ad6f917000010000017bb61b16a9e64a148b88533b32408da4',
+                    authorization: 'pexels API KEY',
                     'x-rapidapi-host': 'PexelsdimasV1.p.rapidapi.com',
-                    'x-rapidapi-key': 'e80d0cd914msh732a35d720eb0a2p1d5b34jsnc852525bc685'
+                    'x-rapidapi-key': 'rapid API KEY'
                 }
             };
         }
