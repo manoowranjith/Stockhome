@@ -3,9 +3,9 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const axios = require('axios')
 const app = express()
+const port = process.env.PORT || 3001
 
-
-app.listen(3001,()=>{
+app.listen(port,()=>{
   console.log("Port 3001 is running")
 })
 

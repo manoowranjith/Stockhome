@@ -23,7 +23,7 @@ function Search(props)
             {
                 var options = {
                     method: 'GET',
-                    url: 'http://localhost:3001/search/'+searched,
+                    url: 'https://stockhome-api.herokuapp.com/search/'+searched,
                 }
 
                 axios.request(options).then(function (response) 
