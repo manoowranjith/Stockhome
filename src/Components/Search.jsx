@@ -7,12 +7,10 @@ function Search(props)
     const [searched, setSearched]=React.useState("")
     const [suggestions, setSuggestions]=React.useState([])
     const [queryData, setQueryData]=React.useState("")
-    // const [receivedData, setReceivedData]=React.useState("")
 
     React.useEffect(
         ()=>
         {
-            // alert("stopped typing huh?")
             if(searched === "")
             {
                 console.log("Triggered empty")
@@ -29,7 +27,6 @@ function Search(props)
                 axios.request(options).then(function (response) 
                 {
                     setSuggestions(response.data.suggestions.slice(0,6))
-                    // console.log(response.data.suggestions.slice(0,6))
                 })
                 .catch(function (error) {
                     console.error(error);
@@ -44,7 +41,6 @@ function Search(props)
             var options={}
             if(queryData === "")
             {
-                // mediaType={mediaType} setMediaType={setMediaType}
                 if(props.mediaType === "photos")
                 {
                     options = {
@@ -109,12 +105,8 @@ function Search(props)
             
             axios.request(options).then(function (response) {
                 console.log(response);
-                // props.setReceivedData( oldArray => [...oldArray, response.data])
                 props.setReceivedData([response.data])
-                // props.setReceivedData([response.data])
             }).catch(function (error) {
-                // alert("Hello")
-                // swal("Here's the title!", "...and here's the text!");
                 swal({
                     title: "API service unavailable",
                     icon: "error",
