@@ -184,7 +184,8 @@ a:link,:visited{
   padding:5px;
   font-weight: 500;
   color: rgb(255, 255, 255);
-  padding: 0 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   cursor: pointer;
 }
 #media{
