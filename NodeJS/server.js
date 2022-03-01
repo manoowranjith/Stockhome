@@ -18,7 +18,8 @@ app.use(cors(
 app.use(bodyParser.urlencoded({extended: true}) )
 
 app.get('/search/:id',(req,res)=>{
-  axios('https://www.pexels.com/api/v3/search/suggestions/'+req.params.id)
+  const url='https://www.pexels.com/api/v3/search/suggestions/'
+  axios(url+req.params.id)
   .then(function (response) {
     res.json(response.data.data.attributes);
   }).catch(function (error) {
