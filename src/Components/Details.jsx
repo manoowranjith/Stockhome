@@ -1,7 +1,6 @@
 import React from "react";
 import axios from "axios";
-import {useParams} from "react-router-dom";
-import { useNavigate } from 'react-router-dom';
+import {useParams, useNavigate} from "react-router-dom";
 
 function Details()
 {
@@ -60,11 +59,6 @@ function Details()
                     duration:"Duration "+response.data.duration+"s"
                 }
             }
-            // console.log(response.data);
-            // console.log(schema)
-            // setTimeout(()=>{
-            //     document.getElementById("dp").style.backgroundColor=schema.color;
-            // },100)
 
             setMediaSource([schema])
         }).catch(function (error) {
@@ -74,9 +68,6 @@ function Details()
     return(
         <div className="mediaDetails">
             <div onClick={()=>{navigate('/Stockhome')}} class="back material-icons-outlined">arrow_back</div>
-             {/* {console.log(params)}
-             {console.log(mediaSource)} */}
-            {/* <button onClick={() => navigate('/')}>Go Back</button>  */}
             <div id="mediaInfo">
             {
                 mediaSource.map((element)=>{
