@@ -7,13 +7,10 @@ function Media(props)
     const navigate = useNavigate();
 
     React.useEffect(()=>{
-        // console.log(props.mediaType)
         if(renderMedia!==props.mediaType)
         {
-            // console.log(renderMedia)
             setRenderMedia(props.mediaType)
         }
-        // console.log(props.receivedData)
     },[props.receivedData])
 
     function colorSwap(button)
@@ -49,11 +46,6 @@ function Media(props)
                     <button onClick={()=>{props.setMediaType("videos"); colorSwap("videos")}} id="videos" className="media-button video">Videos</button>
                 </div>
             </div>
-            {/* <h1>{props.mediaType}</h1> */}
-             {/* <h1>{props.mediaType}</h1> */}
-             {/* <h1>{props.receivedData.length}</h1> */}
-             {/* {console.log(props.mediaType)} */}
-             {/* {console.log(renderMedia)} */}
              {
                        renderMedia === props.mediaType && props.mediaType!=="videos" ? (
                         props.receivedData.map(
@@ -73,15 +65,7 @@ function Media(props)
                                 )
                             })
                       ) : (
-                        // console.log("huh")
-                        // <h1>videos huh? </h1>
-                        // console.log(props.receivedData)
-                        // props.receivedData.map(
-                        //     (element, index)=>
-                        //     {
-                        //        console.log(element)
-                        //     }
-                        // )
+                          {
                         renderMedia === props.mediaType && props.mediaType!=="photos" ? (
                             props.receivedData.map(
                                 (element, index)=>
@@ -91,7 +75,6 @@ function Media(props)
                                             {element.videos.map(source=>{
                                             return(
                                                 <div>   
-                                                   {/* { console.log(source)} */}
                                                     <img  onClick={()=>{routing("videos",source.id)}} className="media-content" src={source.image} alt="" srcSet="" />
                                                 </div>
                                                 )
@@ -103,9 +86,8 @@ function Media(props)
                         ):(
                             console.log("will it hit me?")
                         )
-
+                         }
                       )
-                // console.log(renderMedia)
                  
              }
         </div>
