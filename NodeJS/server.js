@@ -24,7 +24,5 @@ app.get('/search/:id',(req,res)=>{
   }).catch(function (error) {
     res.json({respone:404})
   });
-  // console.log(req.params.id)
-  // res.send("resolved"+req.params.id)
 })
 
