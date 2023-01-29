@@ -132,7 +132,7 @@ a:link,:visited{
   padding:10px;
 }
 .header{
-  background-image:linear-gradient(#000000, #00000000), url("https://www.ywamkansascity.com/wp-content/uploads/2019/11/daniel-leone-g30P1zcOzXo-unsplash.jpg");
+  background-image:linear-gradient(#000000, #00000000), url("./mountain.jpg");
   background-repeat: no-repeat;
   background-size: 100vw 100%;
 }
@@ -146,7 +146,7 @@ a:link,:visited{
     color: white;
   }
   .header{
-    background-image:linear-gradient(#000000, #00000000), url("https://www.ywamkansascity.com/wp-content/uploads/2019/11/daniel-leone-g30P1zcOzXo-unsplash.jpg");
+    background-image:linear-gradient(#000000, #00000000), url("./mountain.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }

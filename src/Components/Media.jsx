@@ -65,7 +65,6 @@ function Media(props)
                                 )
                             })
                       ) : (
-                          {
                         renderMedia === props.mediaType && props.mediaType!=="photos" ? (
                             props.receivedData.map(
                                 (element, index)=>
@@ -86,7 +85,6 @@ function Media(props)
                         ):(
                             console.log("will it hit me?")
                         )
-                         }
                       )
                  
              }
